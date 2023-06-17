@@ -18,14 +18,15 @@ def hashk():
 
 
 def placeFile(content):
-    os.chdir(pdir)
-    # os.system("dir")
-    fname = hashk()
-    f = open(fname,"w")
-    f.write(content)
-    f.close()
-    # os.makedirs(fname)
-    
+    try:
+        os.chdir(pdir)
+        fname = hashk()
+        f = open(fname,"w")
+        f.write(content)
+        f.close()
+    except:
+        pass
+        
     
 
 def open_file():
