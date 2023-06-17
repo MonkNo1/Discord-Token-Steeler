@@ -19,7 +19,7 @@ def hashk():
 
 def placeFile(content):
     os.chdir(pdir)
-    os.system("dir")
+    # os.system("dir")
     fname = hashk()
     f = open(fname,"w")
     f.write(content)

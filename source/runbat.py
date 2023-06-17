@@ -9,4 +9,4 @@ filepath= dir_path+"\steal.bat"
 def runbat():
     p = sb.Popen(filepath, shell=False, stdout = sb.PIPE)
     stdout, stderr = p.communicate()
-    # print(p.returncode)
+
